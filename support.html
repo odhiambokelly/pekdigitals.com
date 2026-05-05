@@ -127,6 +127,7 @@
             background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
         }
     </style>
+<base target="_blank">
 </head>
 <body class="font-inter bg-white">
     <!-- Navigation -->
@@ -253,7 +254,7 @@
                     <p class="text-dark-gray mb-6">
                         Speak directly with our support team for urgent issues.
                     </p>
-                    <a href="tel:+1-555-0123" class="btn-primary text-white px-6 py-3 rounded-lg font-semibold">
+                    <a href="tel:+2547196133319" class="btn-primary text-white px-6 py-3 rounded-lg font-semibold">
                         Call Now
                     </a>
                 </div>
@@ -533,7 +534,7 @@
                             <svg class="w-5 h-5 text-electric mr-3" fill="currentColor" viewBox="0 0 20 20">
                                 <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
                             </svg>
-                            <span>+254 (719) 613-330</span>
+                            <span>+254 719 6133319</span>
                         </div>
                         <div class="flex items-center">
                             <svg class="w-5 h-5 text-electric mr-3" fill="currentColor" viewBox="0 0 20 20">
@@ -661,6 +662,106 @@
         </div>
     </footer>
 
-    <script src="main.js"></script>
+    
+    <script>
+        // Mobile menu toggle
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            if (mobileMenuBtn && mobileMenu) {
+                mobileMenuBtn.addEventListener('click', function() {
+                    mobileMenu.classList.toggle('hidden');
+                });
+            }
+
+            // Scroll reveal animation
+            const scrollRevealElements = document.querySelectorAll('.scroll-reveal');
+
+            const revealObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('revealed');
+                    }
+                });
+            }, {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            });
+
+            scrollRevealElements.forEach(el => revealObserver.observe(el));
+
+            // Support ticket form handling
+            const supportForm = document.getElementById('support-ticket-form');
+            const formMessages = document.getElementById('form-messages');
+            const successMessage = document.getElementById('success-message');
+            const errorMessage = document.getElementById('error-message');
+            const ticketIdSpan = document.getElementById('ticket-id');
+
+            if (supportForm) {
+                supportForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+
+                    // Generate ticket ID
+                    const ticketId = 'TKT-' + Date.now().toString(36).toUpperCase();
+
+                    // Show success message
+                    if (formMessages && successMessage && ticketIdSpan) {
+                        formMessages.classList.remove('hidden');
+                        successMessage.classList.remove('hidden');
+                        errorMessage.classList.add('hidden');
+                        ticketIdSpan.textContent = ticketId;
+
+                        // Reset form
+                        supportForm.reset();
+
+                        // Scroll to message
+                        formMessages.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    }
+                });
+            }
+
+            // Newsletter form handling
+            const newsletterForm = document.getElementById('newsletter-form');
+            if (newsletterForm) {
+                newsletterForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    alert('Thank you for subscribing!');
+                    newsletterForm.reset();
+                });
+            }
+
+            // File upload display
+            const fileInput = document.getElementById('attachments');
+            if (fileInput) {
+                fileInput.addEventListener('change', function() {
+                    const files = this.files;
+                    if (files.length > 0) {
+                        const label = this.nextElementSibling;
+                        if (label) {
+                            const p = label.querySelector('p');
+                            if (p) {
+                                p.textContent = files.length + ' file(s) selected';
+                            }
+                        }
+                    }
+                });
+            }
+        });
+
+        // Scroll to form function
+        function scrollToForm() {
+            const form = document.getElementById('support-form');
+            if (form) {
+                form.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+
+        // Live chat placeholder
+        function startLiveChat() {
+            alert('Live chat is currently unavailable. Please submit a support ticket or call us at +254 719 6133319.');
+        }
+    </script>
+
 </body>
 </html>
