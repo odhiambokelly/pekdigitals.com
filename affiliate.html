@@ -4,178 +4,286 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Affiliate Programme — PekDigital.com</title>
-<meta name="description" content="Join the PekDigital Affiliate Programme. Earn up to 10% profit on every freelancer project you refer. Apply today.">
+<meta name="description" content="Join the PekDigital Affiliate Programme. Earn up to 10% profit on every freelancer project you refer. Apply today and grow your income.">
 <script src="https://cdn.tailwindcss.com"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <script>
-tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter','sans-serif'] } } } }
+tailwind.config = {
+  theme: {
+    extend: {
+      fontFamily: { sans: ['Inter', 'sans-serif'] },
+      colors: { brand: { 50:'#eff6ff',100:'#dbeafe',500:'#3b82f6',600:'#2563eb',700:'#1d4ed8',900:'#0f172a' } }
+    }
+  }
+}
 </script>
 <style>
   html { scroll-behavior: smooth; }
   body { font-family: 'Inter', sans-serif; }
+  .card-hover { transition: transform .3s ease, box-shadow .3s ease; }
+  .card-hover:hover { transform: translateY(-6px); box-shadow: 0 20px 40px rgba(15,23,42,.12); }
+  .gradient-hero { background: radial-gradient(1200px 600px at 80% -10%, rgba(59,130,246,.15), transparent), radial-gradient(800px 400px at 10% 110%, rgba(16,185,129,.10), transparent); }
 </style>
-<base target="_blank">
 </head>
 <body class="bg-white text-slate-800 antialiased">
 
-<!-- ===================== NAVBAR (matches pekdigital.com) ===================== -->
-<header class="sticky top-0 z-50 bg-slate-900 text-white">
+<!-- ===================== NAVBAR ===================== -->
+<header class="sticky top-0 z-50 bg-slate-900 text-white shadow-lg">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
-    <a href="#" class="text-xl font-extrabold tracking-tight">PEKDIGITALS</a>
-    <nav class="hidden md:flex items-center gap-8 text-sm font-medium">
-      <a href="#how-it-works" class="hover:text-slate-300 transition">How It Works</a>
-      <a href="#benefits" class="hover:text-slate-300 transition">Benefits</a>
-      <a href="#earnings" class="hover:text-slate-300 transition">Earnings</a>
-      <a href="#apply" class="hover:text-slate-300 transition">Apply</a>
+    <a href="index.html" class="text-xl font-extrabold tracking-tight">PEKDIGITALS</a>
+    <nav class="hidden md:flex space-x-8 text-sm font-medium">
+      <a href="#how-it-works" class="hover:text-brand-100 transition">How It Works</a>
+      <a href="#benefits" class="hover:text-brand-100 transition">Benefits</a>
+      <a href="#earnings" class="hover:text-brand-100 transition">Earnings</a>
+      <a href="#apply" class="hover:text-brand-100 transition">Apply</a>
     </nav>
-    <a href="#apply" class="bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold px-5 py-2.5 rounded-lg transition">Become an Affiliate</a>
+    <a href="#apply" class="bg-brand-600 hover:bg-brand-700 text-white text-sm font-semibold px-5 py-2.5 rounded-lg transition">Become an Affiliate</a>
   </div>
 </header>
 
 <!-- ===================== HERO ===================== -->
-<section class="bg-slate-50 border-b border-slate-100">
-  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24 text-center">
-    <h1 class="text-4xl md:text-5xl font-extrabold text-slate-900 leading-tight">
-      Earn Up To <span class="text-blue-600">10% Profit</span> On Freelancer Projects
+<section class="gradient-hero">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28 text-center">
+    <span class="inline-block bg-brand-50 text-brand-700 text-xs font-bold uppercase tracking-widest px-4 py-2 rounded-full mb-6">PekDigital Affiliate Programme</span>
+    <h1 class="text-4xl md:text-6xl font-extrabold text-slate-900 leading-tight">
+      Earn Up To <span class="text-brand-600">10% Profit</span><br class="hidden md:block"> On Every Freelancer You Refer
     </h1>
-    <p class="mt-5 text-lg text-slate-600 max-w-2xl mx-auto">
-      PekDigital.com pays up to 10% profit to freelancers and partners for every project they refer. Apply below and start earning.
+    <p class="mt-6 max-w-2xl mx-auto text-lg text-slate-600">
+      PekDigital.com supports up to <strong>10% profit on freelancer projects</strong>. Partner with us, refer businesses to our digital services, and earn recurring commission on every completed project — no technical skills required.
     </p>
-    <a href="#apply" class="inline-block mt-8 bg-blue-600 hover:bg-blue-700 text-white font-semibold px-8 py-4 rounded-xl shadow-lg transition">Apply Now →</a>
+    <div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
+      <a href="#apply" class="w-full sm:w-auto bg-brand-600 hover:bg-brand-700 text-white font-semibold px-8 py-4 rounded-xl shadow-lg shadow-brand-600/30 transition">Apply As a Freelancer Partner</a>
+      <a href="#how-it-works" class="w-full sm:w-auto bg-white hover:bg-slate-50 text-slate-900 font-semibold px-8 py-4 rounded-xl border border-slate-200 transition">See How It Works ↓</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== STATS (from image 1) ===================== -->
+<section id="earnings" class="bg-slate-50 border-y border-slate-100">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+      <div><p class="text-4xl md:text-5xl font-extrabold text-brand-600" data-count="500">0</p><p class="mt-2 text-slate-600 font-medium">Happy Clients</p></div>
+      <div><p class="text-4xl md:text-5xl font-extrabold text-brand-600"><span data-count="1000">0</span>+</p><p class="mt-2 text-slate-600 font-medium">Projects Completed</p></div>
+      <div><p class="text-4xl md:text-5xl font-extrabold text-brand-600"><span data-count="99">0</span>%</p><p class="mt-2 text-slate-600 font-medium">Client Satisfaction</p></div>
+      <div><p class="text-4xl md:text-5xl font-extrabold text-brand-600" data-count="10">0</p><p class="mt-2 text-slate-600 font-medium">% Affiliate Profit</p></div>
+    </div>
   </div>
 </section>
 
 <!-- ===================== HOW IT WORKS ===================== -->
-<section id="how-it-works" class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
-  <h2 class="text-2xl md:text-3xl font-extrabold text-slate-900 text-center">How It Works</h2>
-  <div class="grid md:grid-cols-3 gap-6 mt-10">
-    <div class="rounded-2xl border border-slate-100 p-6">
-      <p class="text-blue-600 font-extrabold">01</p>
-      <h3 class="font-bold text-slate-900 mt-2">Apply</h3>
-      <p class="text-slate-600 text-sm mt-1">Fill the short form below. Approved within 48 hours.</p>
+<section id="how-it-works" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+  <div class="text-center mb-14">
+    <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900">How the Affiliate Programme Works</h2>
+    <p class="mt-4 text-slate-600 max-w-xl mx-auto">Three simple steps between you and your first 10% commission payout.</p>
+  </div>
+  <div class="grid md:grid-cols-3 gap-8">
+    <div class="card-hover bg-white rounded-2xl p-8 border border-slate-100 shadow-sm">
+      <div class="w-12 h-12 rounded-xl bg-brand-50 flex items-center justify-center text-brand-600 font-extrabold text-lg mb-5">1</div>
+      <h3 class="text-xl font-bold text-slate-900">Apply Below</h3>
+      <p class="mt-3 text-slate-600">Fill in the quick application form with your name, email and skills. Approval usually takes 24–48 hours.</p>
     </div>
-    <div class="rounded-2xl border border-slate-100 p-6">
-      <p class="text-blue-600 font-extrabold">02</p>
-      <h3 class="font-bold text-slate-900 mt-2">Refer</h3>
-      <p class="text-slate-600 text-sm mt-1">Share your unique affiliate link with businesses that need our services.</p>
+    <div class="card-hover bg-white rounded-2xl p-8 border border-slate-100 shadow-sm">
+      <div class="w-12 h-12 rounded-xl bg-brand-50 flex items-center justify-center text-brand-600 font-extrabold text-lg mb-5">2</div>
+      <h3 class="text-xl font-bold text-slate-900">Refer Clients</h3>
+      <p class="mt-3 text-slate-600">Share your unique affiliate link with businesses needing websites, SEO, social media marketing, hosting or email.</p>
     </div>
-    <div class="rounded-2xl border border-slate-100 p-6">
-      <p class="text-blue-600 font-extrabold">03</p>
-      <h3 class="font-bold text-slate-900 mt-2">Earn</h3>
-      <p class="text-slate-600 text-sm mt-1">Get up to 10% profit on every completed project, paid monthly.</p>
+    <div class="card-hover bg-white rounded-2xl p-8 border border-slate-100 shadow-sm">
+      <div class="w-12 h-12 rounded-xl bg-brand-50 flex items-center justify-center text-brand-600 font-extrabold text-lg mb-5">3</div>
+      <h3 class="text-xl font-bold text-slate-900">Earn 10% Profit</h3>
+      <p class="mt-3 text-slate-600">When a referred project completes, you earn up to <strong>10% profit</strong> on the freelancer project value — paid out monthly.</p>
     </div>
   </div>
 </section>
 
-<!-- ===================== BENEFITS (with your images) ===================== -->
+<!-- ===================== SERVICES SHOWCASE (image.png) ===================== -->
 <section id="benefits" class="bg-slate-50 border-y border-slate-100">
-  <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
-    <h2 class="text-2xl md:text-3xl font-extrabold text-slate-900 text-center">What You Promote</h2>
-    <p class="text-slate-600 text-center mt-3 max-w-xl mx-auto">Every service below earns you up to 10% when a referred project is completed.</p>
-    <figure class="mt-10 rounded-2xl overflow-hidden shadow-lg border border-slate-200 bg-white">
-      <img src="services.png" alt="PekDigital services" class="w-full h-auto">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900">Promote Services People Already Need</h2>
+      <p class="mt-4 text-slate-600 max-w-2xl mx-auto">Your referrals get PekDigital's full service range — and every completed project earns you up to 10% profit as the referring freelancer.</p>
+    </div>
+    <figure class="rounded-2xl overflow-hidden shadow-2xl border border-slate-200 bg-white">
+      <img src="affiliate-services.png" alt="PekDigital services: Social Media Marketing, Website Design & Development, SEO Services" class="w-full h-auto">
     </figure>
-    <figure class="mt-6 rounded-2xl overflow-hidden shadow-lg border border-slate-200 bg-white">
-      <img src="services-stats.png" alt="PekDigital services and stats" class="w-full h-auto">
-    </figure>
-  </div>
-</section>
-
-<!-- ===================== EARNINGS ===================== -->
-<section id="earnings" class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
-  <h2 class="text-2xl md:text-3xl font-extrabold text-slate-900 text-center">Estimate Your Earnings</h2>
-  <div class="mt-8 rounded-2xl border border-slate-100 shadow-lg p-6 md:p-8">
-    <label class="block text-sm font-semibold text-slate-700">Project value (USD)</label>
-    <input id="pv" type="range" min="100" max="5000" step="50" value="1000" class="w-full mt-2 accent-blue-600">
-    <p class="text-blue-700 font-bold mt-1">$<span id="pvOut">1,000</span></p>
-    <label class="block text-sm font-semibold text-slate-700 mt-6">Projects per month</label>
-    <input id="pc" type="range" min="1" max="20" value="3" class="w-full mt-2 accent-blue-600">
-    <p class="text-blue-700 font-bold mt-1"><span id="pcOut">3</span> projects</p>
-    <div class="mt-6 rounded-xl bg-slate-900 text-white p-5 flex items-center justify-between">
-      <div><p class="text-slate-400 text-xs">Monthly profit (10%)</p><p class="text-2xl md:text-3xl font-extrabold text-emerald-400">$<span id="mOut">300</span></p></div>
-      <div class="text-right"><p class="text-slate-400 text-xs">Yearly</p><p class="font-bold">$<span id="yOut">3,600</span></p></div>
+    <div class="grid md:grid-cols-2 gap-6 mt-10 items-center">
+      <figure class="rounded-2xl overflow-hidden shadow-xl border border-slate-200 bg-white">
+        <img src="affiliate-stats.png" alt="PekDigital domain hosting, business email, technical support and company stats" class="w-full h-auto">
+      </figure>
+      <div>
+        <h3 class="text-2xl font-bold text-slate-900">Everything a Growing Business Needs</h3>
+        <ul class="mt-5 space-y-3 text-slate-600">
+          <li class="flex gap-3"><span class="text-emerald-500 font-bold">✓</span> Social Media Marketing, Website Design & Development, SEO Services</li>
+          <li class="flex gap-3"><span class="text-emerald-500 font-bold">✓</span> Domain & Hosting with 99.9% uptime, plus professional Business Email</li>
+          <li class="flex gap-3"><span class="text-emerald-500 font-bold">✓</span> 24/7 Technical Support your referrals can rely on</li>
+          <li class="flex gap-3"><span class="text-emerald-500 font-bold">✓</span> Trusted track record: 500+ happy clients, 1000+ projects completed</li>
+        </ul>
+        <a href="#apply" class="inline-block mt-7 bg-brand-600 hover:bg-brand-700 text-white font-semibold px-7 py-3.5 rounded-xl transition">Start Earning 10% Today</a>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- ===================== APPLY ===================== -->
+<!-- ===================== EARNINGS CALCULATOR ===================== -->
+<section class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+  <div class="text-center mb-10">
+    <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900">Estimate Your Earnings</h2>
+    <p class="mt-3 text-slate-600">Drag the sliders to see how much you could earn at 10% profit.</p>
+  </div>
+  <div class="bg-white rounded-2xl border border-slate-100 shadow-lg p-8 md:p-10">
+    <label class="block text-sm font-semibold text-slate-700">Average project value you refer (USD)</label>
+    <input id="projValue" type="range" min="100" max="5000" step="50" value="1000" class="w-full mt-3 accent-brand-600">
+    <p class="mt-2 text-brand-700 font-bold text-lg">$<span id="projOut">1,000</span></p>
+    <label class="block text-sm font-semibold text-slate-700 mt-8">Projects per month</label>
+    <input id="projCount" type="range" min="1" max="20" step="1" value="3" class="w-full mt-3 accent-brand-600">
+    <p class="mt-2 text-brand-700 font-bold text-lg"><span id="countOut">3</span> projects</p>
+    <div class="mt-8 rounded-xl bg-slate-900 text-white p-6 flex items-center justify-between">
+      <div><p class="text-slate-400 text-sm">Your monthly profit (10%)</p><p class="text-3xl md:text-4xl font-extrabold text-emerald-400">$<span id="earnOut">300</span></p></div>
+      <div class="text-right"><p class="text-slate-400 text-sm">Yearly</p><p class="text-xl font-bold text-white">$<span id="yearOut">3,600</span></p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== APPLICATION FORM ===================== -->
 <section id="apply" class="bg-slate-900">
-  <div class="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
-    <h2 class="text-2xl md:text-3xl font-extrabold text-white text-center">Apply & Enjoy 10% Profit</h2>
-    <p class="text-slate-300 text-center mt-3">Freelancers welcome — we'll email your affiliate link within 48 hours.</p>
-    <form id="affiliateForm" class="mt-8 bg-white rounded-2xl shadow-2xl p-6 md:p-8 space-y-5" novalidate>
-      <div>
-        <label for="fullName" class="block text-sm font-semibold text-slate-700 mb-1.5">Full Name *</label>
-        <input id="fullName" name="fullName" type="text" required placeholder="John Doe" class="w-full rounded-xl border border-slate-200 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500">
-      </div>
-      <div class="grid md:grid-cols-2 gap-5">
+  <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+    <div class="text-center mb-12">
+      <span class="inline-block bg-brand-500/20 text-brand-100 text-xs font-bold uppercase tracking-widest px-4 py-2 rounded-full mb-4">Applications Open</span>
+      <h2 class="text-3xl md:text-4xl font-extrabold text-white">Apply & Enjoy 10% Profit</h2>
+      <p class="mt-4 text-slate-300 max-w-xl mx-auto">Freelancers and digital marketers welcome. Submit the form and our team will email your affiliate link within 48 hours.</p>
+    </div>
+
+    <form id="affiliateForm" class="bg-white rounded-2xl shadow-2xl p-8 md:p-10 space-y-6" novalidate>
+      <div class="grid md:grid-cols-2 gap-6">
         <div>
-          <label for="email" class="block text-sm font-semibold text-slate-700 mb-1.5">Email *</label>
-          <input id="email" name="email" type="email" required placeholder="you@example.com" class="w-full rounded-xl border border-slate-200 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500">
+          <label for="fullName" class="block text-sm font-semibold text-slate-700 mb-2">Full Name *</label>
+          <input id="fullName" name="fullName" type="text" required placeholder="John Doe" class="w-full rounded-xl border border-slate-200 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-transparent">
         </div>
         <div>
-          <label for="phone" class="block text-sm font-semibold text-slate-700 mb-1.5">Phone / WhatsApp *</label>
-          <input id="phone" name="phone" type="tel" required placeholder="+254 7XX XXX XXX" class="w-full rounded-xl border border-slate-200 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500">
+          <label for="email" class="block text-sm font-semibold text-slate-700 mb-2">Email Address *</label>
+          <input id="email" name="email" type="email" required placeholder="you@example.com" class="w-full rounded-xl border border-slate-200 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-transparent">
+        </div>
+      </div>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div>
+          <label for="phone" class="block text-sm font-semibold text-slate-700 mb-2">Phone / WhatsApp *</label>
+          <input id="phone" name="phone" type="tel" required placeholder="+254 7XX XXX XXX" class="w-full rounded-xl border border-slate-200 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-transparent">
+        </div>
+        <div>
+          <label for="country" class="block text-sm font-semibold text-slate-700 mb-2">Country *</label>
+          <input id="country" name="country" type="text" required placeholder="Kenya" class="w-full rounded-xl border border-slate-200 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-transparent">
         </div>
       </div>
       <div>
-        <label for="skills" class="block text-sm font-semibold text-slate-700 mb-1.5">Your Skill / Niche *</label>
-        <select id="skills" name="skills" required class="w-full rounded-xl border border-slate-200 px-4 py-3 bg-white focus:outline-none focus:ring-2 focus:ring-blue-500">
-          <option value="">Select…</option>
+        <label for="skills" class="block text-sm font-semibold text-slate-700 mb-2">Your Skills / Niche *</label>
+        <select id="skills" name="skills" required class="w-full rounded-xl border border-slate-200 px-4 py-3 bg-white focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-transparent">
+          <option value="">Select your main skill…</option>
           <option>Social Media Marketing</option>
           <option>Website Design & Development</option>
           <option>SEO Services</option>
           <option>Sales / Business Development</option>
+          <option>Content Creation</option>
           <option>Other Freelance Services</option>
         </select>
       </div>
-      <label class="flex items-start gap-2.5 text-sm text-slate-600">
-        <input type="checkbox" required class="mt-0.5 accent-blue-600">
-        <span>I agree to the PekDigital affiliate terms, including earning up to <strong>10% profit on referred freelancer projects</strong>.</span>
+      <div>
+        <label for="experience" class="block text-sm font-semibold text-slate-700 mb-2">Briefly tell us about your experience</label>
+        <textarea id="experience" name="experience" rows="4" placeholder="How do you plan to refer clients to PekDigital?" class="w-full rounded-xl border border-slate-200 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-transparent"></textarea>
+      </div>
+      <label class="flex items-start gap-3 text-sm text-slate-600">
+        <input id="agree" type="checkbox" required class="mt-1 accent-brand-600">
+        <span>I agree to the PekDigital affiliate terms, including earning up to <strong>10% profit on referred freelancer projects</strong> with monthly payouts.</span>
       </label>
-      <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3.5 rounded-xl transition">Submit Application →</button>
-      <p id="formStatus" class="text-center text-sm font-medium text-blue-700 hidden"></p>
+      <button type="submit" class="w-full bg-brand-600 hover:bg-brand-700 text-white font-bold py-4 rounded-xl transition shadow-lg shadow-brand-600/30">Submit My Application →</button>
+      <p id="formStatus" class="text-center text-sm font-medium hidden"></p>
     </form>
   </div>
 </section>
 
+<!-- ===================== FAQ ===================== -->
+<section class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+  <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900 text-center mb-12">Frequently Asked Questions</h2>
+  <div class="space-y-4">
+    <details class="group bg-white border border-slate-100 rounded-2xl p-6 shadow-sm">
+      <summary class="flex justify-between items-center font-semibold text-slate-900 cursor-pointer">How much can I earn as an affiliate?<span class="text-brand-600 group-open:rotate-45 transition text-xl">+</span></summary>
+      <p class="mt-3 text-slate-600">PekDigital pays up to <strong>10% profit on each completed freelancer project</strong> you refer. The more projects you refer, the more you earn — with no cap.</p>
+    </details>
+    <details class="group bg-white border border-slate-100 rounded-2xl p-6 shadow-sm">
+      <summary class="flex justify-between items-center font-semibold text-slate-900 cursor-pointer">When and how do I get paid?<span class="text-brand-600 group-open:rotate-45 transition text-xl">+</span></summary>
+      <p class="mt-3 text-slate-600">Commissions are calculated at month end and paid within the first week of the following month via M-Pesa or bank transfer.</p>
+    </details>
+    <details class="group bg-white border border-slate-100 rounded-2xl p-6 shadow-sm">
+      <summary class="flex justify-between items-center font-semibold text-slate-900 cursor-pointer">Do I need technical skills?<span class="text-brand-600 group-open:rotate-45 transition text-xl">+</span></summary>
+      <p class="mt-3 text-slate-600">No. PekDigital's team delivers all services — you simply connect businesses with us through your unique affiliate link.</p>
+    </details>
+    <details class="group bg-white border border-slate-100 rounded-2xl p-6 shadow-sm">
+      <summary class="flex justify-between items-center font-semibold text-slate-900 cursor-pointer">How do you track my referrals?<span class="text-brand-600 group-open:rotate-45 transition text-xl">+</span></summary>
+      <p class="mt-3 text-slate-600">Every approved affiliate receives a unique tracking link. All projects that come through it are automatically credited to you.</p>
+    </details>
+  </div>
+</section>
+
 <!-- ===================== FOOTER ===================== -->
-<footer class="bg-slate-900 text-slate-400 border-t border-slate-800">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 flex flex-col md:flex-row items-center justify-between gap-4 text-sm">
-    <p class="text-lg font-extrabold text-white">PEKDIGITALS</p>
-    <p>© 2026 PekDigital.com — Earn up to 10% profit on freelancer projects.</p>
+<footer class="bg-slate-900 text-slate-400">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 flex flex-col md:flex-row items-center justify-between gap-6">
+    <p class="text-xl font-extrabold text-white tracking-tight">PEKDIGITALS</p>
+    <p class="text-sm">© 2026 PekDigital.com — Affiliate Programme. Earn up to 10% profit on freelancer projects.</p>
+    <div class="flex gap-5 text-sm">
+      <a href="#apply" class="hover:text-white transition">Apply</a>
+      <a href="#benefits" class="hover:text-white transition">Services</a>
+      <a href="#how-it-works" class="hover:text-white transition">How It Works</a>
+    </div>
   </div>
 </footer>
 
 <script>
+/* ---- Animated counters ---- */
+const counters = document.querySelectorAll('[data-count]');
+const io = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (!e.isIntersecting) return;
+    const el = e.target, target = +el.dataset.count, dur = 1500, t0 = performance.now();
+    const tick = t => {
+      const p = Math.min((t - t0) / dur, 1);
+      el.textContent = Math.round(target * (1 - Math.pow(1 - p, 3))).toLocaleString();
+      if (p < 1) requestAnimationFrame(tick);
+    };
+    requestAnimationFrame(tick);
+    io.unobserve(el);
+  });
+}, { threshold: 0.6 });
+counters.forEach(c => io.observe(c));
+
 /* ---- Earnings calculator ---- */
-const pv = document.getElementById('pv'), pc = document.getElementById('pc');
-const fmt = n => n.toLocaleString();
+const pv = document.getElementById('projValue'), pc = document.getElementById('projCount');
+function fmt(n){ return n.toLocaleString(); }
 function calc(){
   const v = +pv.value, c = +pc.value;
-  document.getElementById('pvOut').textContent = fmt(v);
-  document.getElementById('pcOut').textContent = c;
-  const m = v * c * 0.10;
-  document.getElementById('mOut').textContent = fmt(m);
-  document.getElementById('yOut').textContent = fmt(m * 12);
+  document.getElementById('projOut').textContent = fmt(v);
+  document.getElementById('countOut').textContent = c;
+  document.getElementById('earnOut').textContent = fmt(v * c * 0.10);
+  document.getElementById('yearOut').textContent = fmt(v * c * 0.10 * 12);
 }
 pv.addEventListener('input', calc); pc.addEventListener('input', calc); calc();
 
-/* ---- Form: opens the visitor's email app pre-filled to PekDigital support.
-   For automatic submissions on GitHub Pages, switch the form to Formspree:
-   <form action="https://formspree.io/f/YOUR_ID" method="POST"> ---- */
+/* ---- Form handling ----
+   No backend is included so this page works on GitHub Pages out of the box.
+   Option A (default): opens the visitor's email app with the application pre-filled
+   to SUPPORT@PEKDIGITAL.COM. Option B: point the form at Formspree by setting
+   action="https://formspree.io/f/YOUR_ID" method="POST" on the <form> tag. */
 document.getElementById('affiliateForm').addEventListener('submit', e => {
   e.preventDefault();
-  const f = e.target, s = document.getElementById('formStatus');
+  const f = e.target, status = document.getElementById('formStatus');
   if (!f.checkValidity()) { f.reportValidity(); return; }
   const d = Object.fromEntries(new FormData(f).entries());
   const subject = encodeURIComponent('Affiliate Application — ' + d.fullName);
   const body = encodeURIComponent(
     'Full Name: ' + d.fullName + '\nEmail: ' + d.email + '\nPhone: ' + d.phone +
-    '\nSkills: ' + d.skills + '\n\nI agree to the affiliate terms (10% profit on freelancer projects).');
-  s.textContent = 'Opening your email app to submit…';
-  s.classList.remove('hidden');
+    '\nCountry: ' + d.country + '\nSkills: ' + d.skills +
+    '\nExperience: ' + (d.experience || 'N/A') + '\n\nI agree to the affiliate terms (10% profit on freelancer projects).');
+  status.textContent = 'Opening your email app to submit the application…';
+  status.className = 'text-center text-sm font-medium text-brand-700';
+  status.classList.remove('hidden');
   window.location.href = 'mailto:support@pekdigital.com?subject=' + subject + '&body=' + body;
 });
 </script>
