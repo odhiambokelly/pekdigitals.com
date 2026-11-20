@@ -251,9 +251,21 @@
     }).then(function () { setBusy(form, false); });
   }
 
+  // Short privacy notice under each form (affiliate forms already link to the policies).
+  function addPrivacyNote(form) {
+    if (form.id === 'affiliateForm' || form.querySelector('.pek-privacy')) return;
+    var dark = /newsletter/.test(form.id);
+    var p = document.createElement('p');
+    p.className = 'pek-privacy';
+    p.style.cssText = 'margin-top:10px;font-size:12px;line-height:1.5;opacity:.8;' + (dark ? 'color:#9ca3af' : 'color:#6b7280');
+    p.innerHTML = (form.id.indexOf('newsletter') === 0 ? 'Unsubscribe anytime. ' : 'We only use your details to reply to you. ') +
+      'See our <a href="privacy.html" style="text-decoration:underline;color:inherit">Privacy Policy</a>.';
+    form.appendChild(p);
+  }
+
   function init() {
     Object.keys(FORM_TYPES).forEach(function (id) {
-      document.querySelectorAll('form#' + id).forEach(nameFields);
+      document.querySelectorAll('form#' + id).forEach(function (f) { nameFields(f); addPrivacyNote(f); });
     });
     flushOutbox();
   }
