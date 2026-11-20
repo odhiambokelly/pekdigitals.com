@@ -310,6 +310,7 @@ function initBlogFilters() {
 
 function filterBlogPosts(searchTerm, category) {
     const blogPosts = document.querySelectorAll('.blog-card');
+    let shown = 0;
     
     blogPosts.forEach(post => {
         const title = post.querySelector('h3').textContent.toLowerCase();
@@ -318,9 +319,10 @@ function filterBlogPosts(searchTerm, category) {
         
         const matchesSearch = !searchTerm || title.includes(searchTerm) || content.includes(searchTerm);
         const matchesCategory = category === 'all' || postCategory === category;
+        if (matchesSearch && matchesCategory) shown++;
         
         if (matchesSearch && matchesCategory) {
-            post.style.display = 'block';
+            post.style.display = '';
             anime({
                 targets: post,
                 opacity: [0, 1],
@@ -332,6 +334,8 @@ function filterBlogPosts(searchTerm, category) {
             post.style.display = 'none';
         }
     });
+    const empty = document.getElementById('no-results');
+    if (empty) empty.classList.toggle('hidden', shown > 0);
 }
 
 function getActiveCategory() {

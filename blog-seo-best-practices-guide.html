@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en-KE">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEO Best Practices 2026: A Complete Beginner-Friendly Guide | PEKDigitals</title>
+    <meta name="description" content="A practical, jargon-free guide to SEO best practices in 2026: keyword research, on-page SEO, technical SEO, content and links, with a checklist you can follow.">
+    <!-- SEO -->
+    <meta name="keywords" content="SEO best practices, SEO guide 2026, SEO Kenya, on-page SEO, technical SEO">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <link rel="canonical" href="https://pekdigitals.com/blog-seo-best-practices-guide.html">
+    <meta name="geo.region" content="KE-08">
+    <meta name="geo.placename" content="Homa Bay, Kenya">
+    <!-- Favicon / app icons -->
+    <link rel="icon" href="favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="32x32" href="brand/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="brand/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="brand/apple-touch-icon.png">
+    <link rel="manifest" href="site.webmanifest">
+    <meta name="theme-color" content="#1a2332">
+    <!-- Social sharing -->
+    <meta property="og:type" content="article">
+    <meta property="article:published_time" content="2026-11-12">
+    <meta property="article:section" content="SEO">
+    <meta property="og:site_name" content="Pekdigitals">
+    <meta property="og:locale" content="en_KE">
+    <meta property="og:title" content="The Complete Guide to SEO Best Practices in 2026">
+    <meta property="og:description" content="A practical, jargon-free guide to SEO best practices in 2026: keyword research, on-page SEO, technical SEO, content and links, with a checklist you can follow.">
+    <meta property="og:url" content="https://pekdigitals.com/blog-seo-best-practices-guide.html">
+    <meta property="og:image" content="https://pekdigitals.com/resources/blog-seo.jpg">
+    <meta property="og:image:alt" content="SEO best practices guide showing search rankings">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="The Complete Guide to SEO Best Practices in 2026">
+    <meta name="twitter:description" content="A practical, jargon-free guide to SEO best practices in 2026: keyword research, on-page SEO, technical SEO, content and links, with a checklist you can follow.">
+    <meta name="twitter:image" content="https://pekdigitals.com/resources/blog-seo.jpg">
+
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Core Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'inter': ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        'navy': '#1a2332',
+                        'electric': '#3b82f6',
+                        'gold': '#f59e0b',
+                        'sage': '#10b981',
+                        'charcoal': '#2d3748',
+                        'light-gray': '#f7fafc',
+                        'medium-gray': '#e2e8f0',
+                        'dark-gray': '#4a5568',
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        .hero-bg {
+            background: linear-gradient(135deg, #1a2332 0%, #2d3748 100%);
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(59, 130, 246, 0.4);
+        }
+        
+        .btn-secondary {
+            border: 2px solid #3b82f6;
+            color: #3b82f6;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-secondary:hover {
+            background: #3b82f6;
+            color: white;
+            transform: translateY(-2px);
+        }
+        
+        .nav-link {
+            position: relative;
+            transition: color 0.3s ease;
+        }
+        
+        .nav-link:hover {
+            color: #3b82f6;
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -4px;
+            left: 0;
+            background: #3b82f6;
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        
+        .scroll-reveal {
+            opacity: 0;
+            transform: translateY(30px);
+        }
+        
+        .scroll-reveal.revealed {
+            opacity: 1;
+            transform: translateY(0);
+            transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .value-card {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .value-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+        }
+    </style>
+    <style>
+        .article h2{font-size:1.65rem;line-height:1.3;font-weight:700;color:#1a2332;margin:2.75rem 0 1rem;scroll-margin-top:110px}
+        .article h3{font-size:1.2rem;font-weight:650;color:#1a2332;margin:1.75rem 0 .6rem}
+        .article p,.article li{color:#374151;line-height:1.8;font-size:1.0938rem}
+        .article p{margin:0 0 1.15rem}
+        .article ul,.article ol{padding-left:1.4rem;margin:0 0 1.35rem}
+        .article ul{list-style:disc}.article ol{list-style:decimal}
+        .article li{margin:.45rem 0}
+        .article a{color:#2563eb;text-decoration:underline;text-underline-offset:2px}
+        .article strong{color:#1a2332}
+        .article .lead{font-size:1.25rem;color:#1f2937;line-height:1.7}
+        .article .note{background:#eff6ff;border-left:4px solid #3b82f6;padding:1.1rem 1.35rem;border-radius:.6rem;margin:1.75rem 0}
+        .article .note p:last-child,.article .note ul:last-child{margin-bottom:0}
+        .article .tip{background:#ecfdf5;border-left:4px solid #10b981;padding:1rem 1.25rem;border-radius:.6rem;margin:1.5rem 0}
+        .article table{width:100%;border-collapse:collapse;margin:1.25rem 0 1.75rem;font-size:.98rem}
+        .article th,.article td{border:1px solid #e5e7eb;padding:.65rem .8rem;text-align:left;vertical-align:top}
+        .article th{background:#f8fafc;color:#1a2332}
+        .article .table-wrap{overflow-x:auto}
+        .toc a{display:block;padding:.3rem 0 .3rem .75rem;border-left:2px solid #e2e8f0;color:#4a5568;font-size:.9rem}
+        .toc a:hover{color:#2563eb;border-left-color:#3b82f6}
+    </style>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BlogPosting",
+          "headline": "The Complete Guide to SEO Best Practices in 2026",
+          "description": "A practical, jargon-free guide to SEO best practices in 2026: keyword research, on-page SEO, technical SEO, content and links, with a checklist you can follow.",
+          "image": "https://pekdigitals.com/resources/blog-seo.jpg",
+          "datePublished": "2026-11-12",
+          "dateModified": "2026-11-12",
+          "wordCount": 1011,
+          "articleSection": "SEO",
+          "inLanguage": "en-KE",
+          "mainEntityOfPage": "https://pekdigitals.com/blog-seo-best-practices-guide.html",
+          "author": { "@type": "Organization", "name": "PEKDigitals Team", "url": "https://pekdigitals.com/about.html" },
+          "publisher": { "@type": "Organization", "name": "PEKDigitals", "legalName": "BIGKEYS ENTERPRISES", "logo": { "@type": "ImageObject", "url": "https://pekdigitals.com/brand/logo.png" } }
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://pekdigitals.com/" },
+            { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://pekdigitals.com/blog.html" },
+            { "@type": "ListItem", "position": 3, "name": "The Complete Guide to SEO Best Practices in 2026", "item": "https://pekdigitals.com/blog-seo-best-practices-guide.html" }
+          ]
+        }
+      ]
+    }
+    </script>
+</head>
+<body class="font-inter bg-white">
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-navy/95 backdrop-blur-sm border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <a href="index.html" class="flex items-center gap-3" aria-label="Pekdigitals home">
+                        <span class="flex items-center justify-center w-11 h-11 rounded-xl bg-white shadow-lg shadow-black/20"><img src="brand/logo-mark-96.png" alt="Pekdigitals logo" width="32" height="32" class="w-8 h-8"></span>
+                        <span class="text-2xl font-extrabold tracking-tight leading-none md:hidden xl:inline"><span class="text-electric">pek</span><span class="text-white">digitals</span><span class="text-electric text-base font-bold">.com</span></span>
+                    </a>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center md:space-x-4 lg:space-x-8">
+                    <a href="index.html" class="nav-link text-white font-medium">Home</a>
+                    <a href="about.html" class="nav-link text-white font-medium">About</a>
+                    <a href="affiliate.html" class="nav-link text-white font-medium">Affiliate</a>
+                    <a href="services.html" class="nav-link text-white font-medium">Services</a>
+                    <a href="pricing.html" class="nav-link text-white font-medium">Pricing</a>
+                    <a href="blog.html" class="nav-link text-electric font-medium">Blog</a>
+                    <a href="contact.html" class="nav-link text-white font-medium">Contact</a>
+                    <a href="support.html" class="nav-link text-white font-medium">Support</a>
+                </div>
+                
+                <!-- CTA Button -->
+                <div class="hidden md:block">
+                    <a href="pricing.html" class="whitespace-nowrap btn-primary text-white px-6 py-3 rounded-lg font-semibold">
+                        Get Started
+                    </a>
+                </div>
+                
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-white hover:text-electric transition-colors">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Navigation -->
+        <div id="mobile-menu" class="md:hidden hidden bg-navy border-t border-white/10">
+            <div class="px-6 py-4 space-y-4">
+                <a href="index.html" class="block text-white font-medium">Home</a>
+                <a href="about.html" class="block text-white font-medium">About</a>
+                <a href="affiliate.html" class="block text-white font-medium">Affiliate</a>
+                <a href="services.html" class="block text-white font-medium">Services</a>
+                <a href="pricing.html" class="block text-white font-medium">Pricing</a>
+                <a href="blog.html" class="block text-electric font-medium">Blog</a>
+                <a href="contact.html" class="block text-white font-medium">Contact</a>
+                <a href="support.html" class="block text-white font-medium">Support</a>
+                <a href="pricing.html" class="btn-primary text-white px-6 py-3 rounded-lg font-semibold inline-block mt-4">
+                    Get Started
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Article header -->
+    <section class="hero-bg pt-32 pb-14">
+        <div class="max-w-4xl mx-auto px-6 lg:px-8 text-white">
+            <nav class="text-sm text-gray-400 mb-6" aria-label="Breadcrumb">
+                <a href="index.html" class="hover:text-white">Home</a> <span class="mx-2">›</span>
+                <a href="blog.html" class="hover:text-white">Blog</a> <span class="mx-2">›</span>
+                <a href="blog.html#blog-grid" class="hover:text-white">SEO</a>
+            </nav>
+            <span class="inline-block bg-electric/20 text-blue-200 px-3 py-1 rounded-full text-sm font-semibold mb-5">SEO</span>
+            <h1 class="text-4xl lg:text-5xl font-bold leading-tight mb-6">The Complete Guide to SEO Best Practices in 2026</h1>
+            <div class="flex flex-wrap items-center gap-x-5 gap-y-2 text-gray-300 text-sm">
+                <span class="flex items-center gap-2"><span class="w-8 h-8 rounded-full bg-white flex items-center justify-center"><img src="brand/logo-mark-96.png" alt="" width="20" height="20" class="w-5 h-5"></span>PEKDigitals Team</span>
+                <span>•</span><time datetime="2026-11-12">12 November 2026</time>
+                <span>•</span><span>5 min read</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Article -->
+    <section class="py-14 bg-white">
+        <div class="max-w-6xl mx-auto px-6 lg:px-8 grid lg:grid-cols-4 gap-12">
+            <article class="article lg:col-span-3 max-w-3xl">
+                <img src="resources/blog-seo.jpg" alt="SEO best practices guide showing search rankings" class="rounded-2xl shadow-lg w-full h-auto mb-10" width="1024" height="1024" style="aspect-ratio:16/9;object-fit:cover">
+<p class="lead">Search engine optimisation (SEO) sounds technical, but at its heart it is simple: make it easy for Google to understand your website, and make your pages the most useful answer to what people are searching for. This guide covers the practices that still matter in 2026, in plain language, with a checklist at the end.</p>
+
+<div class="note">
+<p><strong>In one sentence:</strong> pick the searches your customers actually make, create the best page on the internet for each one, make sure the page loads fast and works on a phone, and earn mentions from other trusted sites.</p>
+</div>
+
+<h2 id="how-search-works">How Google decides what to show</h2>
+<p>Google sends automated programs (often called crawlers) to discover pages, stores them in a huge index, and then, every time someone searches, ranks the indexed pages by how relevant and trustworthy they look for that query. You cannot pay Google to rank higher in the normal results. You can only make your pages easier to find, easier to understand and more deserving.</p>
+<p>Google publishes its own <a href="https://developers.google.com/search/docs/fundamentals/seo-starter-guide" target="_blank" rel="noopener">SEO Starter Guide</a>, which is worth bookmarking. Everything below is consistent with it.</p>
+
+<h2 id="keyword-research">Step 1: Find the searches that matter</h2>
+<p>Start with your customers, not with tools. Write down the questions people ask you on the phone, on WhatsApp and at the counter. Those questions are your keywords.</p>
+<ul>
+<li><strong>Use Google's autocomplete.</strong> Type the start of a search, for example "website design for", and note the suggestions.</li>
+<li><strong>Check "People also ask"</strong> boxes in the results for more questions.</li>
+<li><strong>Look at <a href="https://trends.google.com/" target="_blank" rel="noopener">Google Trends</a></strong> to compare phrases, such as "web design" vs "website design" in Kenya.</li>
+<li><strong>Add location words</strong> where it makes sense: "plumber in Homa Bay" is easier to win than "plumber", and the people searching it are closer to buying.</li>
+</ul>
+<p>Group similar searches together and give each group one page. One page per topic is better than ten thin pages that compete with each other.</p>
+
+<h2 id="on-page-seo">Step 2: Get the on-page basics right</h2>
+<h3>Title tags</h3>
+<p>The title tag is the blue clickable headline in Google's results. Put the main keyword near the start, keep it under about 60 characters and make it something a human would want to click. For example: <em>"Website Design in Kisumu | Fast, Mobile-Friendly Sites"</em>.</p>
+<h3>Meta descriptions</h3>
+<p>The short text under the title. It does not directly change rankings, but a clear, specific description gets more clicks. Mention who it is for and what they will get.</p>
+<h3>One H1, then clear subheadings</h3>
+<p>Each page should have a single main heading (H1) that says what the page is about, followed by H2 and H3 subheadings that break the content into scannable sections, just like this article.</p>
+<h3>Descriptive URLs and image alt text</h3>
+<p>Prefer <code>/services/seo</code> over <code>/page?id=123</code>. Describe images in their alt text ("plumber fixing a kitchen sink in Homa Bay") so search engines and screen-reader users understand them.</p>
+<h3>Internal links</h3>
+<p>Link related pages together with descriptive words. If you mention local search on your services page, link to your local SEO page. This helps visitors and helps Google understand which pages are important.</p>
+
+<h2 id="content">Step 3: Write content that genuinely helps</h2>
+<p>The single most reliable SEO strategy is to answer questions better than anyone else. In practice that means:</p>
+<ul>
+<li>Answer the question early, then go deeper.</li>
+<li>Include local details, real prices or ranges, examples and photos that a generic article would not have.</li>
+<li>Keep it up to date. Revisit important pages every six months.</li>
+<li>Show who is behind the content and why they are qualified. Google's guidance calls this experience, expertise, authoritativeness and trust.</li>
+</ul>
+<p>A good example is a "how much does it cost" page. People search for prices constantly, and few businesses answer honestly. Our own <a href="blog-website-cost-kenya.html">guide to website costs in Kenya</a> was written for exactly that reason.</p>
+
+<h2 id="technical-seo">Step 4: Keep the technical health strong</h2>
+<p>You do not need to be a developer, but you should check these regularly:</p>
+<ul>
+<li><strong>Mobile-friendly:</strong> Google ranks the mobile version of your site. Open it on a cheap Android phone and see how it feels.</li>
+<li><strong>Speed:</strong> test with <a href="https://pagespeed.web.dev/" target="_blank" rel="noopener">PageSpeed Insights</a>. Large images are the most common problem.</li>
+<li><strong>HTTPS:</strong> your address should start with https and show a padlock.</li>
+<li><strong>Sitemap and Search Console:</strong> submit your sitemap in <a href="https://search.google.com/search-console/about" target="_blank" rel="noopener">Google Search Console</a> (free). It shows which searches bring visitors and warns you about errors.</li>
+<li><strong>No broken links:</strong> links that go nowhere frustrate visitors and waste the crawler's time.</li>
+</ul>
+
+<h2 id="links">Step 5: Earn links and mentions</h2>
+<p>When other reputable websites link to you, Google takes it as a sign of trust. The key word is <em>earn</em>. Buying links or joining link schemes can get a site penalised.</p>
+<p>Good ways to earn links as a small business:</p>
+<ul>
+<li>Get listed in genuine local directories and industry associations.</li>
+<li>Partner with suppliers or clients who can mention you on their sites.</li>
+<li>Publish something genuinely useful, such as a price guide, a local survey or a free checklist, that others want to reference.</li>
+<li>Sponsor or take part in community events that are covered online.</li>
+</ul>
+
+<h2 id="local-seo">Step 6: Don't forget local SEO</h2>
+<p>If you serve customers in a specific area, local SEO is often where the quickest wins are. Start with a complete <a href="blog-google-business-profile-guide.html">Google Business Profile</a> and follow our <a href="blog-local-seo-strategies.html">local SEO strategies</a>.</p>
+
+<h2 id="mistakes">Common SEO mistakes to avoid</h2>
+<ul>
+<li>Stuffing the same keyword into every sentence. Write naturally.</li>
+<li>Copying text from other websites or manufacturers.</li>
+<li>Having several pages that target exactly the same search.</li>
+<li>Expecting results in a week. SEO usually takes three to six months to show clear results, and then keeps paying off.</li>
+<li>Ignoring Search Console warnings.</li>
+</ul>
+
+<h2 id="checklist">Your SEO checklist</h2>
+<ol>
+<li>List 10–20 real customer questions and group them into topics.</li>
+<li>Give each topic one strong page with a clear title, H1 and meta description.</li>
+<li>Add internal links between related pages.</li>
+<li>Compress images and add descriptive alt text.</li>
+<li>Check mobile speed with PageSpeed Insights.</li>
+<li>Set up Google Search Console and submit your sitemap.</li>
+<li>Complete your Google Business Profile.</li>
+<li>Earn at least one new genuine link or mention each month.</li>
+<li>Review your top pages every six months.</li>
+</ol>
+<p>Prefer to have someone handle it? Our <a href="services.html">SEO services</a> cover keyword research, on-page fixes and ongoing reporting, with <a href="pricing.html">transparent pricing</a>.</p>
+
+                <div class="mt-12 rounded-2xl bg-navy text-white p-8">
+                    <h2 class="!mt-0 !text-white text-2xl font-bold mb-3" style="color:#fff;margin-top:0">Want help putting this into practice?</h2>
+                    <p style="color:#d1d5db">PEKDigitals helps businesses across Kenya with <a href="services.html" style="color:#93c5fd">website design, SEO and social media marketing</a>. Tell us what you are working on and we will suggest the simplest next step, free of charge.</p>
+                    <div class="flex flex-wrap gap-4 mt-6">
+                        <a href="contact.html" class="btn-primary text-white px-6 py-3 rounded-lg font-semibold" style="color:#fff;text-decoration:none">Get a free consultation</a>
+                        <a href="pricing.html" class="px-6 py-3 rounded-lg font-semibold border border-white" style="color:#fff;text-decoration:none">See our pricing</a>
+                    </div>
+                </div>
+            </article>
+            <aside class="hidden lg:block">
+                <div class="sticky top-28">
+                    <p class="font-semibold text-navy mb-3 text-sm">In this article</p>
+                    <nav class="toc space-y-0.5 mb-8" aria-label="Article sections">
+                        <a href="#how-search-works">How Google decides what to show</a>
+                        <a href="#keyword-research">Step 1: Find the searches that matter</a>
+                        <a href="#on-page-seo">Step 2: Get the on-page basics right</a>
+                        <a href="#content">Step 3: Write content that genuinely helps</a>
+                        <a href="#technical-seo">Step 4: Keep the technical health strong</a>
+                        <a href="#links">Step 5: Earn links and mentions</a>
+                        <a href="#local-seo">Step 6: Don't forget local SEO</a>
+                        <a href="#mistakes">Common SEO mistakes to avoid</a>
+                        <a href="#checklist">Your SEO checklist</a>
+                    </nav>
+                    <a href="blog.html" class="text-sm text-electric font-semibold hover:underline">← All articles</a>
+                </div>
+            </aside>
+        </div>
+    </section>
+
+    <!-- Related -->
+    <section class="py-16 bg-light-gray">
+        <div class="max-w-6xl mx-auto px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-navy mb-8">Keep reading</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <article class="bg-white rounded-2xl overflow-hidden shadow-lg">
+                    <a href="blog-local-seo-strategies.html"><img src="resources/service-seo.jpg" alt="Local SEO helping a business appear on Google Maps" class="w-full h-44 object-cover" loading="lazy" width="400" height="176"></a>
+                    <div class="p-6">
+                        <p class="text-sm text-dark-gray mb-2">SEO · 15 October 2026</p>
+                        <h3 class="text-lg font-bold text-navy leading-snug"><a href="blog-local-seo-strategies.html" class="hover:text-electric transition-colors">Local SEO Strategies That Actually Work: Get Found in Your Town</a></h3>
+                    </div>
+                </article>
+                <article class="bg-white rounded-2xl overflow-hidden shadow-lg">
+                    <a href="blog-google-business-profile-guide.html"><img src="resources/contact-office.jpg" alt="Business owner setting up a Google Business Profile" class="w-full h-44 object-cover" loading="lazy" width="400" height="176"></a>
+                    <div class="p-6">
+                        <p class="text-sm text-dark-gray mb-2">SEO · 16 November 2026</p>
+                        <h3 class="text-lg font-bold text-navy leading-snug"><a href="blog-google-business-profile-guide.html" class="hover:text-electric transition-colors">How to Set Up and Optimise Your Google Business Profile (Step by Step)</a></h3>
+                    </div>
+                </article>
+                <article class="bg-white rounded-2xl overflow-hidden shadow-lg">
+                    <a href="blog-digital-marketing-trends-2026.html"><img src="resources/blog-marketing.jpg" alt="Digital marketing trends for Kenyan businesses in 2026" class="w-full h-44 object-cover" loading="lazy" width="400" height="176"></a>
+                    <div class="p-6">
+                        <p class="text-sm text-dark-gray mb-2">Marketing · 18 November 2026</p>
+                        <h3 class="text-lg font-bold text-navy leading-snug"><a href="blog-digital-marketing-trends-2026.html" class="hover:text-electric transition-colors">10 Digital Marketing Trends Kenyan Businesses Should Watch in 2026</a></h3>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="bg-charcoal text-white py-16">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <!-- Company Info -->
+                <div>
+                    <a href="index.html" class="inline-block mb-4" aria-label="Pekdigitals home"><img src="brand/logo-white-440.png" alt="Pekdigitals.com – digital marketing agency in Kenya" width="220" height="143" class="w-48 h-auto" loading="lazy"></a>
+                    <p class="text-gray-400 mb-4">
+                        Transforming businesses through comprehensive digital marketing solutions.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-electric transition-colors">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-electric transition-colors">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-electric transition-colors">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="text-gray-400 hover:text-electric transition-colors">About Us</a></li>
+                        <li><a href="affiliate.html" class="text-gray-400 hover:text-electric transition-colors">Affiliate</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-electric transition-colors">Services</a></li>
+                        <li><a href="pricing.html" class="text-gray-400 hover:text-electric transition-colors">Pricing</a></li>
+                        <li><a href="blog.html" class="text-gray-400 hover:text-electric transition-colors">Blog</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-electric transition-colors">Contact</a></li>
+                        <li><a href="support.html" class="text-gray-400 hover:text-electric transition-colors">Support</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Services -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Services</h4>
+                    <ul class="space-y-2">
+                        <li><a href="services.html#social-media" class="text-gray-400 hover:text-electric transition-colors">Social Media Marketing</a></li>
+                        <li><a href="services.html#web-design" class="text-gray-400 hover:text-electric transition-colors">Website Design</a></li>
+                        <li><a href="services.html#seo" class="text-gray-400 hover:text-electric transition-colors">SEO Services</a></li>
+                        <li><a href="services.html#hosting" class="text-gray-400 hover:text-electric transition-colors">Domain & Hosting</a></li>
+                        <li><a href="services.html#email" class="text-gray-400 hover:text-electric transition-colors">Business Email</a></li>
+                        <li><a href="services.html#support" class="text-gray-400 hover:text-electric transition-colors">Technical Support</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Newsletter -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Stay Updated</h4>
+                    <p class="text-gray-400 mb-4">Get the latest digital marketing tips and insights.</p>
+                    <form id="newsletter-form" class="space-y-3">
+                        <input type="email" placeholder="Your Email" required 
+                               class="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-lg focus:border-electric focus:outline-none transition-colors">
+                        <button type="submit" class="w-full bg-electric text-white px-4 py-2 rounded-lg font-semibold hover:bg-blue-600 transition-colors">
+                            Subscribe
+                        </button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-12 pt-8 text-center">
+                <p class="text-gray-400">
+                    © 2026 PEKDigitals, a brand of <a href="about.html#company-information" class="hover:text-electric hover:underline">BIGKEYS ENTERPRISES</a> (registered in Kenya). All rights reserved.
+                </p>
+                <p class="mt-4 text-sm text-gray-400 flex flex-wrap justify-center gap-x-6 gap-y-2"><a href="terms.html" class="hover:text-electric hover:underline">Terms of Service</a><a href="privacy.html" class="hover:text-electric hover:underline">Privacy Policy</a><a href="refund-policy.html" class="hover:text-electric hover:underline">Refund &amp; Cancellation Policy</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script src="forms.js"></script>
+</body>
+</html>

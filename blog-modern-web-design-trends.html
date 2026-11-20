@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en-KE">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Web Design Trends for Business Websites (2026) | PEKDigitals</title>
+    <meta name="description" content="The web design trends that genuinely improve business websites in 2026: mobile-first layouts, speed, clear calls to action, accessibility and WhatsApp integration.">
+    <!-- SEO -->
+    <meta name="keywords" content="web design trends, modern website design, website design Kenya, mobile-first design">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <link rel="canonical" href="https://pekdigitals.com/blog-modern-web-design-trends.html">
+    <meta name="geo.region" content="KE-08">
+    <meta name="geo.placename" content="Homa Bay, Kenya">
+    <!-- Favicon / app icons -->
+    <link rel="icon" href="favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="32x32" href="brand/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="brand/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="brand/apple-touch-icon.png">
+    <link rel="manifest" href="site.webmanifest">
+    <meta name="theme-color" content="#1a2332">
+    <!-- Social sharing -->
+    <meta property="og:type" content="article">
+    <meta property="article:published_time" content="2026-11-06">
+    <meta property="article:section" content="Web Design">
+    <meta property="og:site_name" content="Pekdigitals">
+    <meta property="og:locale" content="en_KE">
+    <meta property="og:title" content="Modern Web Design Trends Every Business Should Know">
+    <meta property="og:description" content="The web design trends that genuinely improve business websites in 2026: mobile-first layouts, speed, clear calls to action, accessibility and WhatsApp integration.">
+    <meta property="og:url" content="https://pekdigitals.com/blog-modern-web-design-trends.html">
+    <meta property="og:image" content="https://pekdigitals.com/resources/blog-web-development.jpg">
+    <meta property="og:image:alt" content="Modern responsive web design on laptop and mobile">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Modern Web Design Trends Every Business Should Know">
+    <meta name="twitter:description" content="The web design trends that genuinely improve business websites in 2026: mobile-first layouts, speed, clear calls to action, accessibility and WhatsApp integration.">
+    <meta name="twitter:image" content="https://pekdigitals.com/resources/blog-web-development.jpg">
+
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Core Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'inter': ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        'navy': '#1a2332',
+                        'electric': '#3b82f6',
+                        'gold': '#f59e0b',
+                        'sage': '#10b981',
+                        'charcoal': '#2d3748',
+                        'light-gray': '#f7fafc',
+                        'medium-gray': '#e2e8f0',
+                        'dark-gray': '#4a5568',
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        .hero-bg {
+            background: linear-gradient(135deg, #1a2332 0%, #2d3748 100%);
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(59, 130, 246, 0.4);
+        }
+        
+        .btn-secondary {
+            border: 2px solid #3b82f6;
+            color: #3b82f6;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-secondary:hover {
+            background: #3b82f6;
+            color: white;
+            transform: translateY(-2px);
+        }
+        
+        .nav-link {
+            position: relative;
+            transition: color 0.3s ease;
+        }
+        
+        .nav-link:hover {
+            color: #3b82f6;
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -4px;
+            left: 0;
+            background: #3b82f6;
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        
+        .scroll-reveal {
+            opacity: 0;
+            transform: translateY(30px);
+        }
+        
+        .scroll-reveal.revealed {
+            opacity: 1;
+            transform: translateY(0);
+            transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .value-card {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .value-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+        }
+    </style>
+    <style>
+        .article h2{font-size:1.65rem;line-height:1.3;font-weight:700;color:#1a2332;margin:2.75rem 0 1rem;scroll-margin-top:110px}
+        .article h3{font-size:1.2rem;font-weight:650;color:#1a2332;margin:1.75rem 0 .6rem}
+        .article p,.article li{color:#374151;line-height:1.8;font-size:1.0938rem}
+        .article p{margin:0 0 1.15rem}
+        .article ul,.article ol{padding-left:1.4rem;margin:0 0 1.35rem}
+        .article ul{list-style:disc}.article ol{list-style:decimal}
+        .article li{margin:.45rem 0}
+        .article a{color:#2563eb;text-decoration:underline;text-underline-offset:2px}
+        .article strong{color:#1a2332}
+        .article .lead{font-size:1.25rem;color:#1f2937;line-height:1.7}
+        .article .note{background:#eff6ff;border-left:4px solid #3b82f6;padding:1.1rem 1.35rem;border-radius:.6rem;margin:1.75rem 0}
+        .article .note p:last-child,.article .note ul:last-child{margin-bottom:0}
+        .article .tip{background:#ecfdf5;border-left:4px solid #10b981;padding:1rem 1.25rem;border-radius:.6rem;margin:1.5rem 0}
+        .article table{width:100%;border-collapse:collapse;margin:1.25rem 0 1.75rem;font-size:.98rem}
+        .article th,.article td{border:1px solid #e5e7eb;padding:.65rem .8rem;text-align:left;vertical-align:top}
+        .article th{background:#f8fafc;color:#1a2332}
+        .article .table-wrap{overflow-x:auto}
+        .toc a{display:block;padding:.3rem 0 .3rem .75rem;border-left:2px solid #e2e8f0;color:#4a5568;font-size:.9rem}
+        .toc a:hover{color:#2563eb;border-left-color:#3b82f6}
+    </style>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BlogPosting",
+          "headline": "Modern Web Design Trends Every Business Should Know",
+          "description": "The web design trends that genuinely improve business websites in 2026: mobile-first layouts, speed, clear calls to action, accessibility and WhatsApp integration.",
+          "image": "https://pekdigitals.com/resources/blog-web-development.jpg",
+          "datePublished": "2026-11-06",
+          "dateModified": "2026-11-06",
+          "wordCount": 724,
+          "articleSection": "Web Design",
+          "inLanguage": "en-KE",
+          "mainEntityOfPage": "https://pekdigitals.com/blog-modern-web-design-trends.html",
+          "author": { "@type": "Organization", "name": "PEKDigitals Team", "url": "https://pekdigitals.com/about.html" },
+          "publisher": { "@type": "Organization", "name": "PEKDigitals", "legalName": "BIGKEYS ENTERPRISES", "logo": { "@type": "ImageObject", "url": "https://pekdigitals.com/brand/logo.png" } }
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://pekdigitals.com/" },
+            { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://pekdigitals.com/blog.html" },
+            { "@type": "ListItem", "position": 3, "name": "Modern Web Design Trends Every Business Should Know", "item": "https://pekdigitals.com/blog-modern-web-design-trends.html" }
+          ]
+        }
+      ]
+    }
+    </script>
+</head>
+<body class="font-inter bg-white">
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-navy/95 backdrop-blur-sm border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <a href="index.html" class="flex items-center gap-3" aria-label="Pekdigitals home">
+                        <span class="flex items-center justify-center w-11 h-11 rounded-xl bg-white shadow-lg shadow-black/20"><img src="brand/logo-mark-96.png" alt="Pekdigitals logo" width="32" height="32" class="w-8 h-8"></span>
+                        <span class="text-2xl font-extrabold tracking-tight leading-none md:hidden xl:inline"><span class="text-electric">pek</span><span class="text-white">digitals</span><span class="text-electric text-base font-bold">.com</span></span>
+                    </a>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center md:space-x-4 lg:space-x-8">
+                    <a href="index.html" class="nav-link text-white font-medium">Home</a>
+                    <a href="about.html" class="nav-link text-white font-medium">About</a>
+                    <a href="affiliate.html" class="nav-link text-white font-medium">Affiliate</a>
+                    <a href="services.html" class="nav-link text-white font-medium">Services</a>
+                    <a href="pricing.html" class="nav-link text-white font-medium">Pricing</a>
+                    <a href="blog.html" class="nav-link text-electric font-medium">Blog</a>
+                    <a href="contact.html" class="nav-link text-white font-medium">Contact</a>
+                    <a href="support.html" class="nav-link text-white font-medium">Support</a>
+                </div>
+                
+                <!-- CTA Button -->
+                <div class="hidden md:block">
+                    <a href="pricing.html" class="whitespace-nowrap btn-primary text-white px-6 py-3 rounded-lg font-semibold">
+                        Get Started
+                    </a>
+                </div>
+                
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-white hover:text-electric transition-colors">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Navigation -->
+        <div id="mobile-menu" class="md:hidden hidden bg-navy border-t border-white/10">
+            <div class="px-6 py-4 space-y-4">
+                <a href="index.html" class="block text-white font-medium">Home</a>
+                <a href="about.html" class="block text-white font-medium">About</a>
+                <a href="affiliate.html" class="block text-white font-medium">Affiliate</a>
+                <a href="services.html" class="block text-white font-medium">Services</a>
+                <a href="pricing.html" class="block text-white font-medium">Pricing</a>
+                <a href="blog.html" class="block text-electric font-medium">Blog</a>
+                <a href="contact.html" class="block text-white font-medium">Contact</a>
+                <a href="support.html" class="block text-white font-medium">Support</a>
+                <a href="pricing.html" class="btn-primary text-white px-6 py-3 rounded-lg font-semibold inline-block mt-4">
+                    Get Started
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Article header -->
+    <section class="hero-bg pt-32 pb-14">
+        <div class="max-w-4xl mx-auto px-6 lg:px-8 text-white">
+            <nav class="text-sm text-gray-400 mb-6" aria-label="Breadcrumb">
+                <a href="index.html" class="hover:text-white">Home</a> <span class="mx-2">›</span>
+                <a href="blog.html" class="hover:text-white">Blog</a> <span class="mx-2">›</span>
+                <a href="blog.html#blog-grid" class="hover:text-white">Web Design</a>
+            </nav>
+            <span class="inline-block bg-electric/20 text-blue-200 px-3 py-1 rounded-full text-sm font-semibold mb-5">Web Design</span>
+            <h1 class="text-4xl lg:text-5xl font-bold leading-tight mb-6">Modern Web Design Trends Every Business Should Know</h1>
+            <div class="flex flex-wrap items-center gap-x-5 gap-y-2 text-gray-300 text-sm">
+                <span class="flex items-center gap-2"><span class="w-8 h-8 rounded-full bg-white flex items-center justify-center"><img src="brand/logo-mark-96.png" alt="" width="20" height="20" class="w-5 h-5"></span>PEKDigitals Team</span>
+                <span>•</span><time datetime="2026-11-06">6 November 2026</time>
+                <span>•</span><span>4 min read</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Article -->
+    <section class="py-14 bg-white">
+        <div class="max-w-6xl mx-auto px-6 lg:px-8 grid lg:grid-cols-4 gap-12">
+            <article class="article lg:col-span-3 max-w-3xl">
+                <img src="resources/blog-web-development.jpg" alt="Modern responsive web design on laptop and mobile" class="rounded-2xl shadow-lg w-full h-auto mb-10" width="1024" height="1024" style="aspect-ratio:16/9;object-fit:cover">
+<p class="lead">A website trend is only worth following if it helps a visitor do what they came for: understand what you offer, trust you, and get in touch. Here are the design approaches that do that well in 2026, and a few fashionable ones you can safely ignore.</p>
+
+<div class="note">
+<p><strong>Quick check:</strong> open your website on your phone, on mobile data, and time how long it takes to answer three questions: What do you do? Where are you? How do I contact you? If any answer takes more than five seconds, start there.</p>
+</div>
+
+<h2 id="mobile-first">1. Mobile-first, thumb-friendly layouts</h2>
+<p>For most Kenyan businesses, the majority of website visitors are on a phone. Designing for the small screen first, then expanding for laptops, produces cleaner pages for everyone.</p>
+<ul>
+<li>Buttons big enough to tap with a thumb, with space around them.</li>
+<li>Text at least 16px so nobody has to pinch and zoom.</li>
+<li>A sticky "Call" or "WhatsApp" button at the bottom of the screen.</li>
+<li>Menus that are short. Five or six items is plenty.</li>
+</ul>
+
+<h2 id="speed">2. Speed as a design feature</h2>
+<p>A beautiful site that takes eight seconds to load on 4G loses visitors before they see it. Speed is now part of design, not an afterthought.</p>
+<ul>
+<li>Use modern image formats (WebP or AVIF) and size images for the screen they are shown on.</li>
+<li>Avoid auto-playing background videos and heavy animation libraries.</li>
+<li>Limit fonts to one or two families.</li>
+</ul>
+<p>Google's <a href="https://web.dev/articles/vitals" target="_blank" rel="noopener">Core Web Vitals</a> measure loading speed, responsiveness and visual stability. Run your site through <a href="https://pagespeed.web.dev/" target="_blank" rel="noopener">PageSpeed Insights</a> to see your scores and suggestions.</p>
+
+<h2 id="clear-messaging">3. Clear messaging above the fold</h2>
+<p>The top of your homepage should answer, in plain words, <em>what you do, who it is for and what to do next</em>. "Excellence in innovative solutions" says nothing. "Affordable websites for small businesses in Kisumu, ready in two weeks" says everything.</p>
+<p>Pair that headline with one primary button, such as "Get a free quote", rather than five competing ones.</p>
+
+<h2 id="real-photos">4. Real photography over stock images</h2>
+<p>Visitors scroll past generic stock photos. Pictures of your actual team, workspace, products and finished projects build recognition and trust. They do not need to be professional, just well lit and in focus.</p>
+
+<h2 id="whatsapp-integration">5. WhatsApp and click-to-call built in</h2>
+<p>Many customers would rather send a quick WhatsApp message than fill in a form. A click-to-chat link (it looks like <code>https://wa.me/2547XXXXXXXX</code>) opens a conversation with your business number in one tap. Offer it alongside your contact form, not instead of it, so customers can choose.</p>
+
+<h2 id="accessibility">6. Accessibility that helps everyone</h2>
+<p>Accessible design means people with visual, hearing or motor impairments can use your site. It also makes it easier for everyone else, for example someone reading in bright sunlight.</p>
+<ul>
+<li>Strong colour contrast between text and background.</li>
+<li>Descriptive alt text on images.</li>
+<li>Forms with clear labels, not just placeholder text.</li>
+<li>Everything usable with a keyboard.</li>
+</ul>
+<p>The international standard is the <a href="https://www.w3.org/WAI/standards-guidelines/wcag/" target="_blank" rel="noopener">Web Content Accessibility Guidelines (WCAG)</a>.</p>
+
+<h2 id="trust-signals">7. Visible trust signals</h2>
+<p>Before someone pays a business they found online, they look for reassurance. Make these easy to find:</p>
+<ul>
+<li>Your registered business name, physical location and phone number.</li>
+<li>Recent reviews or testimonials with real names (with permission).</li>
+<li>Clear prices or starting prices.</li>
+<li>Terms, privacy and refund policies linked in the footer.</li>
+<li>Payment options you accept, such as M-Pesa and card.</li>
+</ul>
+
+<h2 id="dark-mode">8. Thoughtful dark sections and bold typography</h2>
+<p>Large, confident headings and alternating light and dark sections help visitors scan long pages. Used sparingly, they add personality without slowing the site down. This is a trend worth borrowing, as long as text contrast stays high.</p>
+
+<h2 id="skip">Trends you can safely skip</h2>
+<ul>
+<li><strong>Full-screen sliders</strong> on the homepage. Most visitors never see slide two.</li>
+<li><strong>Pop-ups the moment someone arrives.</strong> They annoy people and can hurt your search rankings on mobile.</li>
+<li><strong>Heavy 3D effects and scroll animations</strong> that slow down budget phones.</li>
+<li><strong>Chatbots that cannot answer real questions.</strong> A WhatsApp button that reaches a human is usually better.</li>
+</ul>
+
+<h2 id="next-steps">Putting it together</h2>
+<p>You do not need to redesign everything at once. Start with mobile speed and a clear headline, then add WhatsApp, real photos and trust signals. If you are planning a new site, our guide to <a href="blog-website-cost-kenya.html">what a website costs in Kenya</a> will help you budget, and our <a href="services.html">website design service</a> includes all of the above as standard.</p>
+<p>Good design also supports search visibility. See our <a href="blog-seo-best-practices-guide.html">SEO best practices guide</a> for how the two work together.</p>
+
+                <div class="mt-12 rounded-2xl bg-navy text-white p-8">
+                    <h2 class="!mt-0 !text-white text-2xl font-bold mb-3" style="color:#fff;margin-top:0">Want help putting this into practice?</h2>
+                    <p style="color:#d1d5db">PEKDigitals helps businesses across Kenya with <a href="services.html" style="color:#93c5fd">website design, SEO and social media marketing</a>. Tell us what you are working on and we will suggest the simplest next step, free of charge.</p>
+                    <div class="flex flex-wrap gap-4 mt-6">
+                        <a href="contact.html" class="btn-primary text-white px-6 py-3 rounded-lg font-semibold" style="color:#fff;text-decoration:none">Get a free consultation</a>
+                        <a href="pricing.html" class="px-6 py-3 rounded-lg font-semibold border border-white" style="color:#fff;text-decoration:none">See our pricing</a>
+                    </div>
+                </div>
+            </article>
+            <aside class="hidden lg:block">
+                <div class="sticky top-28">
+                    <p class="font-semibold text-navy mb-3 text-sm">In this article</p>
+                    <nav class="toc space-y-0.5 mb-8" aria-label="Article sections">
+                        <a href="#mobile-first">1. Mobile-first, thumb-friendly layouts</a>
+                        <a href="#speed">2. Speed as a design feature</a>
+                        <a href="#clear-messaging">3. Clear messaging above the fold</a>
+                        <a href="#real-photos">4. Real photography over stock images</a>
+                        <a href="#whatsapp-integration">5. WhatsApp and click-to-call built in</a>
+                        <a href="#accessibility">6. Accessibility that helps everyone</a>
+                        <a href="#trust-signals">7. Visible trust signals</a>
+                        <a href="#dark-mode">8. Thoughtful dark sections and bold typography</a>
+                        <a href="#skip">Trends you can safely skip</a>
+                        <a href="#next-steps">Putting it together</a>
+                    </nav>
+                    <a href="blog.html" class="text-sm text-electric font-semibold hover:underline">← All articles</a>
+                </div>
+            </aside>
+        </div>
+    </section>
+
+    <!-- Related -->
+    <section class="py-16 bg-light-gray">
+        <div class="max-w-6xl mx-auto px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-navy mb-8">Keep reading</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <article class="bg-white rounded-2xl overflow-hidden shadow-lg">
+                    <a href="blog-website-cost-kenya.html"><img src="resources/hero-digital-agency.jpg" alt="Website design project costs for a Kenyan business" class="w-full h-44 object-cover" loading="lazy" width="400" height="176"></a>
+                    <div class="p-6">
+                        <p class="text-sm text-dark-gray mb-2">Web Design · 20 November 2026</p>
+                        <h3 class="text-lg font-bold text-navy leading-snug"><a href="blog-website-cost-kenya.html" class="hover:text-electric transition-colors">How Much Does a Website Cost in Kenya? A Plain-English Price Guide</a></h3>
+                    </div>
+                </article>
+                <article class="bg-white rounded-2xl overflow-hidden shadow-lg">
+                    <a href="blog-digital-marketing-trends-2026.html"><img src="resources/blog-marketing.jpg" alt="Digital marketing trends for Kenyan businesses in 2026" class="w-full h-44 object-cover" loading="lazy" width="400" height="176"></a>
+                    <div class="p-6">
+                        <p class="text-sm text-dark-gray mb-2">Marketing · 18 November 2026</p>
+                        <h3 class="text-lg font-bold text-navy leading-snug"><a href="blog-digital-marketing-trends-2026.html" class="hover:text-electric transition-colors">10 Digital Marketing Trends Kenyan Businesses Should Watch in 2026</a></h3>
+                    </div>
+                </article>
+                <article class="bg-white rounded-2xl overflow-hidden shadow-lg">
+                    <a href="blog-seo-best-practices-guide.html"><img src="resources/blog-seo.jpg" alt="SEO best practices guide showing search rankings" class="w-full h-44 object-cover" loading="lazy" width="400" height="176"></a>
+                    <div class="p-6">
+                        <p class="text-sm text-dark-gray mb-2">SEO · 12 November 2026</p>
+                        <h3 class="text-lg font-bold text-navy leading-snug"><a href="blog-seo-best-practices-guide.html" class="hover:text-electric transition-colors">The Complete Guide to SEO Best Practices in 2026</a></h3>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="bg-charcoal text-white py-16">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <!-- Company Info -->
+                <div>
+                    <a href="index.html" class="inline-block mb-4" aria-label="Pekdigitals home"><img src="brand/logo-white-440.png" alt="Pekdigitals.com – digital marketing agency in Kenya" width="220" height="143" class="w-48 h-auto" loading="lazy"></a>
+                    <p class="text-gray-400 mb-4">
+                        Transforming businesses through comprehensive digital marketing solutions.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-electric transition-colors">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-electric transition-colors">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-electric transition-colors">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="text-gray-400 hover:text-electric transition-colors">About Us</a></li>
+                        <li><a href="affiliate.html" class="text-gray-400 hover:text-electric transition-colors">Affiliate</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-electric transition-colors">Services</a></li>
+                        <li><a href="pricing.html" class="text-gray-400 hover:text-electric transition-colors">Pricing</a></li>
+                        <li><a href="blog.html" class="text-gray-400 hover:text-electric transition-colors">Blog</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-electric transition-colors">Contact</a></li>
+                        <li><a href="support.html" class="text-gray-400 hover:text-electric transition-colors">Support</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Services -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Services</h4>
+                    <ul class="space-y-2">
+                        <li><a href="services.html#social-media" class="text-gray-400 hover:text-electric transition-colors">Social Media Marketing</a></li>
+                        <li><a href="services.html#web-design" class="text-gray-400 hover:text-electric transition-colors">Website Design</a></li>
+                        <li><a href="services.html#seo" class="text-gray-400 hover:text-electric transition-colors">SEO Services</a></li>
+                        <li><a href="services.html#hosting" class="text-gray-400 hover:text-electric transition-colors">Domain & Hosting</a></li>
+                        <li><a href="services.html#email" class="text-gray-400 hover:text-electric transition-colors">Business Email</a></li>
+                        <li><a href="services.html#support" class="text-gray-400 hover:text-electric transition-colors">Technical Support</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Newsletter -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Stay Updated</h4>
+                    <p class="text-gray-400 mb-4">Get the latest digital marketing tips and insights.</p>
+                    <form id="newsletter-form" class="space-y-3">
+                        <input type="email" placeholder="Your Email" required 
+                               class="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-lg focus:border-electric focus:outline-none transition-colors">
+                        <button type="submit" class="w-full bg-electric text-white px-4 py-2 rounded-lg font-semibold hover:bg-blue-600 transition-colors">
+                            Subscribe
+                        </button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-12 pt-8 text-center">
+                <p class="text-gray-400">
+                    © 2026 PEKDigitals, a brand of <a href="about.html#company-information" class="hover:text-electric hover:underline">BIGKEYS ENTERPRISES</a> (registered in Kenya). All rights reserved.
+                </p>
+                <p class="mt-4 text-sm text-gray-400 flex flex-wrap justify-center gap-x-6 gap-y-2"><a href="terms.html" class="hover:text-electric hover:underline">Terms of Service</a><a href="privacy.html" class="hover:text-electric hover:underline">Privacy Policy</a><a href="refund-policy.html" class="hover:text-electric hover:underline">Refund &amp; Cancellation Policy</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script src="forms.js"></script>
+</body>
+</html>
