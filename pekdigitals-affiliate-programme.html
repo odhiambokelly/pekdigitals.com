@@ -338,26 +338,8 @@
   }));
   document.getElementById('year').textContent = new Date().getFullYear();
 
-  document.getElementById('affiliateForm').addEventListener('submit', function(event) {
-    event.preventDefault();
-    if (!this.reportValidity()) return;
-    const data = Object.fromEntries(new FormData(this).entries());
-    data.applicationType = 'Pekdigitals Affiliate & Freelancer Programme';
-    data.submittedAt = new Date().toISOString();
-    data.consent = document.getElementById('consent').checked;
-    const blob = new Blob([JSON.stringify(data, null, 2)], {type: 'application/json'});
-    const url = URL.createObjectURL(blob);
-    const download = document.createElement('a');
-    download.href = url;
-    download.download = 'pekdigitals-affiliate-application-' + new Date().toISOString().slice(0,10) + '.json';
-    document.body.appendChild(download);
-    download.click();
-    download.remove();
-    URL.revokeObjectURL(url);
-    const message = document.getElementById('formMessage');
-    message.textContent = 'Your application file has been prepared and downloaded. This page is not yet connected to an application inbox, so the file has not been sent to Pekdigitals. Connect an approved form endpoint or CRM to receive applications automatically.';
-    message.classList.add('show');
-  });
+  // Form submission is handled by forms.js
 </script>
+    <script src="forms.js"></script>
 </body>
 </html>

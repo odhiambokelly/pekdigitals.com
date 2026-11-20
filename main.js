@@ -233,81 +233,8 @@ function initPricingToggle() {
     });
 }
 
-// Form Handling
-function initForms() {
-    // Contact Form
-    const contactForm = document.getElementById('contact-form');
-    if (contactForm) {
-        contactForm.addEventListener('submit', handleFormSubmit);
-    }
-    
-    // Support Form
-    const supportForm = document.getElementById('support-ticket-form');
-    if (supportForm) {
-        supportForm.addEventListener('submit', handleFormSubmit);
-    }
-    
-    // CTA Form
-    const ctaForm = document.getElementById('cta-form');
-    if (ctaForm) {
-        ctaForm.addEventListener('submit', handleFormSubmit);
-    }
-}
-
-function handleFormSubmit(event) {
-    event.preventDefault();
-    
-    const form = event.target;
-    const formData = new FormData(form);
-    const submitButton = form.querySelector('button[type="submit"]');
-    const originalText = submitButton.textContent;
-    
-    // Show loading state
-    submitButton.textContent = 'Sending...';
-    submitButton.disabled = true;
-    
-    // Simulate form submission (replace with actual API call)
-    setTimeout(() => {
-        showFormMessage(form, 'success');
-        form.reset();
-        
-        // Reset button
-        submitButton.textContent = originalText;
-        submitButton.disabled = false;
-    }, 2000);
-}
-
-function showFormMessage(form, type) {
-    const messagesContainer = form.parentNode.querySelector('#form-messages');
-    if (!messagesContainer) return;
-    
-    const successMessage = messagesContainer.querySelector('#success-message');
-    const errorMessage = messagesContainer.querySelector('#error-message');
-    
-    messagesContainer.classList.remove('hidden');
-    
-    if (type === 'success') {
-        successMessage.classList.remove('hidden');
-        errorMessage.classList.add('hidden');
-        
-        // Generate ticket ID for support form
-        if (form.id === 'support-ticket-form') {
-            const ticketId = 'TKT-' + Math.random().toString(36).substr(2, 9).toUpperCase();
-            const ticketIdElement = successMessage.querySelector('#ticket-id');
-            if (ticketIdElement) {
-                ticketIdElement.textContent = ticketId;
-            }
-        }
-    } else {
-        errorMessage.classList.remove('hidden');
-        successMessage.classList.add('hidden');
-    }
-    
-    // Hide message after 5 seconds
-    setTimeout(() => {
-        messagesContainer.classList.add('hidden');
-    }, 5000);
-}
+// Form handling lives in forms.js (real sending, auto-reply, storage and backup)
+function initForms() {}
 
 // FAQ Toggle
 function initFAQ() {
@@ -429,31 +356,8 @@ function initSmoothScroll() {
     });
 }
 
-// Newsletter Form
-function initNewsletterForm() {
-    const newsletterForms = document.querySelectorAll('#newsletter-form, #newsletter-signup');
-    
-    newsletterForms.forEach(form => {
-        form.addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            const email = this.querySelector('input[type="email"]').value;
-            const button = this.querySelector('button[type="submit"]');
-            const originalText = button.textContent;
-            
-            button.textContent = 'Subscribing...';
-            button.disabled = true;
-            
-            // Simulate subscription
-            setTimeout(() => {
-                alert(`Thank you for subscribing with ${email}! You'll receive our latest insights soon.`);
-                this.reset();
-                button.textContent = originalText;
-                button.disabled = false;
-            }, 1500);
-        });
-    });
-}
+// Newsletter signup is handled by forms.js
+function initNewsletterForm() {}
 
 // Utility Functions
 function scrollToForm() {

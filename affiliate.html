@@ -299,26 +299,8 @@ function calc(){
 }
 pv.addEventListener('input', calc); pc.addEventListener('input', calc); calc();
 
-/* ---- Form handling ----
-   No backend is included so this page works on GitHub Pages out of the box.
-   Option A (default): opens the visitor's email app with the application pre-filled
-   to SUPPORT@PEKDIGITALS.NET. Option B: point the form at Formspree by setting
-   action="https://formspree.io/f/YOUR_ID" method="POST" on the <form> tag. */
-document.getElementById('affiliateForm').addEventListener('submit', e => {
-  e.preventDefault();
-  const f = e.target, status = document.getElementById('formStatus');
-  if (!f.checkValidity()) { f.reportValidity(); return; }
-  const d = Object.fromEntries(new FormData(f).entries());
-  const subject = encodeURIComponent('Affiliate Application — ' + d.fullName);
-  const body = encodeURIComponent(
-    'Full Name: ' + d.fullName + '\nEmail: ' + d.email + '\nPhone: ' + d.phone +
-    '\nCountry: ' + d.country + '\nSkills: ' + d.skills +
-    '\nExperience: ' + (d.experience || 'N/A') + '\n\nI agree to the affiliate terms (10% profit on freelancer projects).');
-  status.textContent = 'Opening your email app to submit the application…';
-  status.className = 'text-center text-sm font-medium text-brand-700';
-  status.classList.remove('hidden');
-  window.location.href = 'mailto:support@pekdigitals.net?subject=' + subject + '&body=' + body;
-});
+/* ---- Form handling: see forms.js (email to support, auto-reply, Google Sheet storage) ---- */
 </script>
+    <script src="forms.js"></script>
 </body>
 </html>

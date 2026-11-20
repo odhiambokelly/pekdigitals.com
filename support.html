@@ -561,7 +561,7 @@
                                 <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/>
                                 <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/>
                             </svg>
-                            <span>support@pekdigitals.com</span>
+                            <span>support@bigkeysenterprises.com</span>
                         </div>
                         <div class="flex items-center">
                             <svg class="w-5 h-5 text-electric mr-3" fill="currentColor" viewBox="0 0 20 20">
@@ -725,45 +725,7 @@
 
             scrollRevealElements.forEach(el => revealObserver.observe(el));
 
-            // Support ticket form handling
-            const supportForm = document.getElementById('support-ticket-form');
-            const formMessages = document.getElementById('form-messages');
-            const successMessage = document.getElementById('success-message');
-            const errorMessage = document.getElementById('error-message');
-            const ticketIdSpan = document.getElementById('ticket-id');
-
-            if (supportForm) {
-                supportForm.addEventListener('submit', function(e) {
-                    e.preventDefault();
-
-                    // Generate ticket ID
-                    const ticketId = 'TKT-' + Date.now().toString(36).toUpperCase();
-
-                    // Show success message
-                    if (formMessages && successMessage && ticketIdSpan) {
-                        formMessages.classList.remove('hidden');
-                        successMessage.classList.remove('hidden');
-                        errorMessage.classList.add('hidden');
-                        ticketIdSpan.textContent = ticketId;
-
-                        // Reset form
-                        supportForm.reset();
-
-                        // Scroll to message
-                        formMessages.scrollIntoView({ behavior: 'smooth', block: 'center' });
-                    }
-                });
-            }
-
-            // Newsletter form handling
-            const newsletterForm = document.getElementById('newsletter-form');
-            if (newsletterForm) {
-                newsletterForm.addEventListener('submit', function(e) {
-                    e.preventDefault();
-                    alert('Thank you for subscribing!');
-                    newsletterForm.reset();
-                });
-            }
+            // Support ticket + newsletter submissions are handled by forms.js
 
             // File upload display
             const fileInput = document.getElementById('attachments');
@@ -797,5 +759,6 @@
         }
     </script>
 
+    <script src="forms.js"></script>
 </body>
 </html>
