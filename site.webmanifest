@@ -1,0 +1,13 @@
+{
+  "name": "Pekdigitals",
+  "short_name": "Pekdigitals",
+  "description": "Digital marketing agency in Kenya: website design, SEO and social media marketing.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#1a2332",
+  "icons": [
+    { "src": "brand/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "brand/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}
